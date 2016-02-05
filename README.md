@@ -12,6 +12,7 @@ It's a simple boilerplate for start development in React. Starter kit includes
 * JSX syntax
 * Livereload
 * Web Dev Server
+* Fingerprinting assets
 
 ## Getting started
 
@@ -22,4 +23,3 @@ $ npm start
 ```
 
 Now you can access app on `http://localhost:8080`
-
