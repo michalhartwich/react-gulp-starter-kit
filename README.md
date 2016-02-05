@@ -15,12 +15,13 @@ It's a simple boilerplate for start development in React. Starter kit includes
 * Fingerprinting assets
 * Netguru Bootstrapper
 
-## Getting started
 ### Note
 If you don't have `gulp` installed, please run following command:
 ```
 npm install -g gulp
 ```
+
+## Getting started
 
 ```
 $ git clone git@github.com:michalhartwich/react-gulp-starter-kit.git && cd react-gulp-starter-kit
