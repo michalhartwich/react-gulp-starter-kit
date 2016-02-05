@@ -7,8 +7,9 @@ var sass = require('gulp-sass');
 var buffer = require('gulp-buffer');
 var rev = require('gulp-rev');
 var revReplace = require('gulp-rev-replace');
+var rimraf = require('rimraf');
 
-gulp.task('scripts', ['images'], function () {
+gulp.task('scripts', ['images'], function (cb) {
   return browserify({entries: ['./js/index.js'], extensions: ['.js', '.jsx'], debug: true})
     .transform('babelify', {presets: ['es2015', 'stage-0', 'react']})
     .bundle()
@@ -20,13 +21,17 @@ gulp.task('scripts', ['images'], function () {
     .pipe(gulp.dest(''))
 });
 
-gulp.task('build', ['styles', 'scripts'], function() {
+gulp.task('build', ['clean', 'styles', 'scripts'], function() {
   var manifest = gulp.src("./public/rev-manifest.json");
   return gulp.src('./index.html')
     .pipe(revReplace({manifest: manifest}))
     .pipe(gulp.dest('./public/'))
     .pipe(connect.reload());
 });
+
+gulp.task('clean', function(cb) {
+  rimraf('./public', cb);
+})
 
 gulp.task('styles', function() {
   return gulp.src('stylesheets/application.scss')
