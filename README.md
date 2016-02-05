@@ -20,7 +20,23 @@ It's a simple boilerplate for start development in React. Starter kit includes
 ```
 $ git clone git@github.com:michalhartwich/react-gulp-starter-kit.git && cd react-gulp-starter-kit
 $ npm install
-$ npm start
+$ gulp
 ```
 
 Now you can access app on `http://localhost:8080`
+
+## Commands
+* `gulp` - launches default task which builds the project and runs webserver, file watcher and livereload
+* `gulp build` - builds the project to the `public` folder
+* `gulp clean` - clean `public` folder
+
+## Files and directories
+* `/index.html` - index html file where content is rendered
+* `/js/index.js` - application root node
+* `/js/routes.js` - define routes (see [react-router documentation](https://github.com/rackt/react-router))
+* `/js/pages` - main components for pages loaded by router
+* `/js/components` - react components
+* `/stylesheets/settings` - SCSS variables and settings
+* `/stylesheets/framework` - Bootstrap settings and overrides
+* `/stylesheets/components` - stylesheets for react components
+* `/stylesheets/components/_components.scss` - import components' stylesheets
