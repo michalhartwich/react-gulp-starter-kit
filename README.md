@@ -13,6 +13,7 @@ It's a simple boilerplate for start development in React. Starter kit includes
 * Livereload
 * Web Dev Server
 * Fingerprinting assets
+* Netguru Bootstrapper
 
 ## Getting started
 
