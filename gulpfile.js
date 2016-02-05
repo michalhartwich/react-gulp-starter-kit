@@ -30,7 +30,7 @@ gulp.task('build', ['clean', 'styles', 'scripts'], function() {
 });
 
 gulp.task('clean', function(cb) {
-  rimraf('./public', cb);
+  rimraf('./public/*', cb);
 })
 
 gulp.task('styles', function() {
