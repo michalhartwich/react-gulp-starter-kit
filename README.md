@@ -16,6 +16,11 @@ It's a simple boilerplate for start development in React. Starter kit includes
 * Netguru Bootstrapper
 
 ## Getting started
+### Note
+If you don't have `gulp` installed, please run following command:
+```
+npm install -g gulp
+```
 
 ```
 $ git clone git@github.com:michalhartwich/react-gulp-starter-kit.git && cd react-gulp-starter-kit
@@ -23,12 +28,13 @@ $ npm install
 $ gulp
 ```
 
+
 Now you can access app on `http://localhost:8080`
 
 ## Commands
 * `gulp` - launches default task which builds the project and runs webserver, file watcher and livereload
 * `gulp build` - builds the project to the `public` folder
-* `gulp clean` - clean `public` folder
+* `gulp clean` - cleans `public` folder
 
 ## Files and directories
 * `/index.html` - index html file where content is rendered
